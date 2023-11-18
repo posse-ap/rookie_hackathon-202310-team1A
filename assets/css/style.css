@@ -50,4 +50,43 @@ h1{
 .container{
   width: 80vw;
   margin-top: -100vh;
+  
+}
+
+.container-top{
+  /* display: flex; */
+}
+.container-title{
+  display: flex;
+}
+
+.container-list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* background-color: #AED6F1; */
+}
+.container-listPoint{
+  background-color: #aed6f1;
+  border-radius: 20px;
+  margin: 5px;
+}
+.container-listTitle{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.container-listText{
+  padding: 20px;
+}
+.container-bottom{
+  margin: 20px;
+}
+.container-img{
+  text-align: center;
+}
+.container-img img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
