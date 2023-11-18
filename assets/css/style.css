@@ -50,32 +50,75 @@ h1{
 .container{
   width: 80vw;
   margin-top: -100vh;
-  
+  background-color: #E5E5E5;
+  color: white;
 }
 
 .container-top{
-  /* display: flex; */
+  display: flex;
+  background-color: #494e6b;
+  /* border-radius: 20px; */
+  padding-bottom: 30px;
+  /* margin-top: 20px; */
 }
 .container-title{
-  display: flex;
+  display: block;
+  margin: 30px 45px 0px 45px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+.container-titleSub{
+  font-size: 20px;
+  text-align: center;
+}
+.container-titleDetail{
+  margin: 40px 45px 0px 45px;
+  font-size: 15px;
 }
 
 .container-list{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  /* background-color: #AED6F1; */
 }
 .container-listPoint{
-  background-color: #aed6f1;
+  background-color:#985e6d;
   border-radius: 20px;
-  margin: 5px;
+  margin: 5%;
 }
 .container-listTitle{
   text-align: center;
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 5px;
+  font-size: 30px;
 }
+.container-listTitle1{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 30px;
+}
+.container-listTitle::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  margin-left: -3.8vw;
+  width: 2em;
+  height: 3px;
+  background-color: white;
+}
+.container-listTitle1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  margin-left: -6vw;
+  width: 3em;
+  height: 3px;
+  background-color: white;
+}
+
 .container-listText{
   padding: 20px;
 }
@@ -89,4 +132,7 @@ h1{
   height: 80px;
   width: 80px;
   border-radius: 50%;
+}
+.container-tag {
+ margin-bottom: 10px;
 }
