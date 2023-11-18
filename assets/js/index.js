@@ -16,7 +16,3 @@ $(window).on('load',function(){
   //=====ここまで背景が伸びた後に動かしたいJSをまとめる
       
 });
-
-// メインビジュアルの要素を取得
-const mainVisual = document.getElementById("js-mainVisual");
-
