@@ -1,8 +1,43 @@
+.main_visual_child{
+  position: relative;
+  height: 80vh;
+}
+
+.main_visual_img{
+  width: 100vw;
+  height: 80vh;
+}
+
+h1{
+  position: absolute;
+  z-index: 1;
+  color: aliceblue;
+  font-size: 4rem;
+  top: 5vh;
+  left: 5vw;
+}
+
+.main_visual_img{
+  position: absolute;
+}
+
+
 .side_bar{
-  background-color: rgb(205, 205, 205);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #E5E5E5;
   width: 20vw;
   height: 100vh;
-  position: fixed;
   margin: 0 0 0 80vw;
   z-index: 0;
+  display: flex;
+}
+
+.sidebar_img{
+  height: 100vh;
+}
+
+#timetable{
+  height: 100000px;
 }
