@@ -38,6 +38,15 @@ h1{
   height: 100vh;
 }
 
+.sidebar_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7vh 0 5vh 1vw ;
+  font-size: large;
+  font-weight: 500;
+}
+
 #timetable{
   height: 100000px;
 }
