@@ -25,7 +25,7 @@ $(window).on('load',function(){
   $("#splash-logo").delay(1100).fadeOut('slow');//ロゴを1秒でフェードアウトする記述
 
   //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-  $("#splash").delay(1000).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
+  $("#splash").delay(600).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
   
       $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
 
