@@ -8,6 +8,9 @@
   height: 80vh;
 }
 
+body{
+/* font-family: "Noto Sans JP",sans-serif ; */
+}
 h1{
   position: absolute;
   z-index: 1;
