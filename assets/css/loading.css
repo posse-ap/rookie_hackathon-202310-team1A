@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*========= ローディング画面のためのCSS ===============*/
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999999;
+  text-align:center;
+  color:#0071BC;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splash-logo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.shape {
+  position: absolute;
+  right: 43vw;
+  top: 44vh;
+  width: 80px;
+  height: 80px;
+  background-image: conic-gradient(#0071BC 0deg, white 0deg);
+  clip-path: circle();
+  display: grid;
+  place-items: center;
+}
+
+.shape::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  clip-path: circle();
+}
+
+/*========= 画面遷移のためのCSS ===============*/
+
+/*画面遷移アニメーション*/
+
+body{
+    background:#fff;/*遷移アニメーションと同じ色を指定*/
+}
+
+body.appear{
+    background:#fff;/*画面を開いた後の背景色を指定*/
+}
+
+.splashbg{
+    display: none;
+  content: "";
+  position:fixed;
+  transform: scale(100);
+  background-color:#0071BC;
+  ;/*伸びる背景色の設定*/
+  z-index: 999;
+    /*丸のスタートの形状*/
+    top:calc(50% - 1rem);/*50%から円の半径を引いた値*/
+    left:calc(50% - 1rem);/*50%から円の半径を引いた値*/
+  width: 2rem;
+  height: 2rem;
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear .splashbg{
+    display: block;
+    border-radius: 50%; 
+  animation-name:PageAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes PageAnime{
+  0% {/*丸のスタート位置と形状*/
+    transform: scale(0);
+  
+  }
+  100% {/*丸の終了位置と形状*/
+    transform: scale(100);
+    display: none;/*終了時は消える*/
+  }
+}
+
+/*画面遷移の後現れるコンテンツ設定*/
+main{
+  opacity: 0;/*はじめは透過0に*/
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear main{
+  animation-name:PageAnimeAppear;
+  animation-duration:1s;
+  animation-delay: 0.8s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes PageAnimeAppear{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
