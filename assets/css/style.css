@@ -149,14 +149,14 @@ h1{
 }
 
 .img-p{
-  top: 0;
-  left: 0; 
+  /* top: 0;
+  left: 0;  */
   margin:  0px 0px 40px;
   width: 100%;
   height: auto;
   border-radius: 10%;
-  max-width: 50%;
-  object-fit: cover; 
+  /* max-width: 50%;
+  object-fit: cover;  */
 }
 
 .plan{
@@ -191,7 +191,7 @@ h1{
 
 
 
-.pln-section {
+/* .pln-section {
   display: flex;
   flex-direction: column; 
   margin-top: 20px;
@@ -217,7 +217,7 @@ h1{
 .plan:nth-child(odd) .plan-script {
   margin-left: 0;
   margin-right: 10px;
-}  
+}   */
 
 
 
@@ -250,12 +250,12 @@ h1{
 
 .plan:nth-child(even) {
   flex-direction: row-reverse;
-  background-color:#E5E5E5
+  /* background-color:#E5E5E5 */
 }
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .plan {
     flex-direction: column;
   }
@@ -264,4 +264,4 @@ h1{
   .plan-script {
     width: 100%;
   }
-}
+} */
